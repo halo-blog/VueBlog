@@ -10,7 +10,7 @@ if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
   githubUrl=git@github.com:halo-blog/VueBlog.git
 else
-  msg='来自github action的自动部署'
+  msg='来自 github action 的自动部署'
   githubUrl=https://halo-blog:${GITHUB_TOKEN}@github.com/halo-blog/VueBlog.git
   git config --global user.name "halo-blog"
   git config --global user.email "1379978893@qq.com"
